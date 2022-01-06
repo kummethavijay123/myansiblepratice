@@ -4,7 +4,7 @@
   tasks:
   - name : i want install webserver on only ubuntu nodes
     apt: 
-     name: "{{webserverpackofubutnu}}"
+     name: "{{webserverpackofubuntu}}"
      state: present
     when: ansible_os_family=="Debian"
 
@@ -12,7 +12,7 @@
 
   - name: i want start webserver on only ubuntu nodes
     service:
-     name: "{{webserverpackofubutnu}}"
+     name: "{{webserverpackofubuntu}}"
      state: started
     when: ansible_os_family=="Debian"
 
