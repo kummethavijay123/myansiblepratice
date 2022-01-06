@@ -1,2 +1,2 @@
 ---
-installjavapackforubuntu: penjdk-9-jre
+installjavapackforubuntu: openjdk-9-jre
