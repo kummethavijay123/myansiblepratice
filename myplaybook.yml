@@ -2,7 +2,7 @@
 - hosts: webserver
   become: yes
   tasks:
-  - name : i want install java on only ubuntu nodes
+  - name : i want install on only  java ubuntu nodes
     apt: 
      name: "{{installjavapackforubuntu}}"
      state: present
@@ -10,20 +10,12 @@
 
 
 
-  - name: i want start java on only ubuntu nodes
-    service:
-     name: "{{installjavapackforubuntu}}"
-     state: started
-    when: ansible_os_family=="Debian"
+ 
 
-  - name: i want install java on only redhat nodes
+  - name: i want install on only  java redhat nodes
     yum:
      name: "{{installjavapackforredhat}}"
      state: present
     when: ansible_os_family=="RedHat"
 
-  - name: i want start java on only redhat nodes
-    service:
-     name: "{{installjavapackforredhat}}"
-     state: started 
-    when: ansible_os_family=="RedHat"
+  
