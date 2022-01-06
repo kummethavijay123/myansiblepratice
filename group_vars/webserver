@@ -1,4 +1,4 @@
 ---
 key: value
-webserverpackforubuntu:apache2
-webserverpackofredhat:httpd
+webserverpackforubuntu: apache2
+webserverpackofredhat: httpd
