@@ -12,3 +12,6 @@
 172.05.25.23
 172.55.16.10
 
+[webserver]:vars
+webserverpackofubuntu= apache2
+webserverpackofredhat= httpd
